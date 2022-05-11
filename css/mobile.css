@@ -1,0 +1,51 @@
+#main-nav .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 1rem 0;
+}
+.social {
+    margin-top: -15px;
+}
+#home-articles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#home-articles .articles-container > *:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#home-articles .articles-container article {
+    margin: 1rem 0;
+}
+#main-footer .footer-container {
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+#main-footer .footer-container > div {
+    margin: 1rem 0;
+}
+#main-footer .footer-container > *:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#main-footer form input[type="email"] {
+    width: 100%;
+}
+#showcase .showcase-container {
+    grid-template-columns: 1fr;
+}
+#about .page-container {
+    grid-template-columns: 1fr;
+}
+#article .page-container {
+    grid-template-columns: 1fr;
+}
